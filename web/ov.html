@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* 全局字体大小设置，以根元素字体大小为基准（默认一般是16px），方便后面使用rem单位做相对尺寸设置 */
+    html {
+      font-size: 16px;
+    }
+
+    /* 定义图片悬停时的放大效果，修改放大倍数为1.04倍 */
+  .zoomable {
+      transition: transform 0.5s ease;
+    }
+
+  .zoomable:hover {
+      transform: scale(1.03);
+    }
+
+    /* 定义高级返回首页按钮的样式，使其更加精致并且能居中显示 */
+  .fancy-return-button {
+      display: inline-block;
+      padding: 0.625rem 1.25rem;
+      font-size: 1rem;
+      font-family: 'Arial', sans-serif;
+      color: #ffffff;
+      background-color: #5a5a5a;
+      border: 0.125rem solid #ffffff;
+      border-radius: 10px;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+      margin: 0 auto; /* 添加此行让按钮在单元格中自动水平居中 */
+    }
+
+    /* 定义按钮悬停时的样式 */
+  .fancy-return-button:hover {
+      background-color: #444444;
+      transform: scale(1.05);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      font-size: 1.125rem;
+    }
+
+    /* 为所有图片添加圆角样式 */
+    img {
+      border-radius: 30px;
+    }
+
+    table {
+      width: 100%;
+      border: 1px solid;
+    }
+
+    /* 表格单元格样式统一设置，使用相对单位来设置字体大小等 */
+    td {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <td height="37" align="center" bgcolor="#373636" style="font-family: '得意黑'; font-size: 3.125rem; color: #EFDDDE;">
+          <p>我的音乐</p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td height="52" align="center" bgcolor="#EBE7E7" style="font-family: '华文仿宋'; font-size: 0.875rem; color: #EFDADB;">
+          <!-- 使用带有样式的按钮 -->
+          <a href="../index.html" class="fancy-return-button">返回首页</a>
+        </td>
+      </tr>
+      <tr>
+        <td height="498" align="center" bgcolor="#8C8A56">
+          <!-- 添加class="zoomable"到图片标签，并已有圆角效果 -->
+          <img src="../image/331917320154012_edit_17691243250424.png" width="1117" height="435" alt="" class="zoomable">
+        </td>
+      </tr>
+      <tr>
+        <td height="60" align="center" bgcolor="#373636" style="font-family: '华文彩云'; color: #FAFAFA; font-size: 1.5rem;">
+          <span style="color: #EFE4E5">赵雷《成都》</span><span style="color: #000000"></span>
+        </td>
+      </tr>
+      <tr>
+        <td height="529" align="center" bgcolor="#A46566">
+          <p><img src="../image/597117320153352_edit_17650841892097.png" width="1117" height="473" alt="" class="zoomable"></p>
+          <!-- 添加class="zoomable"到图片标签 -->
+        </td>
+      </tr>
+      <tr>
+        <td height="75" align="center" bgcolor="#373636" style="font-family: '得意黑'; color: #DF59EE; font-size: 1.5rem;">
+          邓紫棋 《句号》
+        </td>
+      </tr>
+      <tr>
+        <td height="536" align="center" bgcolor="#63666C">
+          <!-- 添加class="zoomable"到图片标签 -->
+          <img src="../image/1151917320153772_edit_17674932974385.png" width="1117" height="471" alt="" class="zoomable">
+        </td>
+      </tr>
+      <tr>
+        <td height="87" align="center" bgcolor="#373636" style="font-family: '得意黑'; color: #E7DDDE; font-size: 1.5rem;">
+          邓紫棋《光年之外》
+        </td>
+      </tr>
+      <tr>
+        <td height="481" align="center" bgcolor="#615D5E">
+        <!-- 添加class="zoomable"到图片标签 --><img src="../image/1337917320154982_edit_17700829982715.png" width="1117" height="435" alt=""/></td>
+      </tr>
+      <tr>
+        <td height="54" align="center" bgcolor="#E3D6EC" style="font-family: '方正舒体'; color: #352D25; font-size: 1.5rem;">《平凡之路》 </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

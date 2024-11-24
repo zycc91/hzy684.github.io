@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>homepage</title>
+  <style type="text/css">
+    /* 将字体相关设置使用相对单位 rem 等，方便适配不同屏幕大小，根元素字体大小设为16px（浏览器默认一般是16px），这里42px换算后就是2.625rem */
+    body,
+    td,
+    th {
+      font-family: "得意黑";
+      font-size: 2.625rem;
+      color: #000000;
+    }
+
+    /* 定义按钮的通用样式，使用相对单位来设置内外边距和字体大小等 */
+  .nav-button {
+      display: inline-block;
+      padding: 1.875rem 3.75rem;
+      font-size: 1.5rem;
+      color: #000000;
+      background-color: #FCF4DF;
+      border: none;
+      border-radius: 15px;
+      text-decoration: none;
+      text-align: center;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* 为不同的按钮设置不同的背景颜色 */
+  .nav-button.hust {
+      background-color: #FCF4DF;
+    }
+
+  .nav-button.marathon {
+      background-color: #E3F1EE;
+    }
+
+  .nav-button.dormitory {
+      background-color: #E3F1EE;
+    }
+
+  .nav-button.summer-memories {
+      background-color: #DFEA97;
+    }
+
+  .nav-button.music {
+      background-color: #9CC6F0;
+    }
+
+    /* 定义按钮悬停时的样式 */
+  .nav-button:hover {
+      transform: scale(1.1);
+    }
+
+    /* 正确的悬停样式写法，使用相对单位设置背景颜色改变，颜色调整参考原代码逻辑，用更适配网页阅读的视觉感受来选择颜色深浅 */
+  .nav-button.hust:hover {
+      background-color: #EFD0B3;
+    }
+
+  .nav-button.marathon:hover {
+      background-color: #C3E5E3;
+    }
+
+  .nav-button.dormitory:hover {
+      background-color: #C3E5E3;
+    }
+
+  .nav-button.summer-memories:hover {
+      background-color: #C1C96E;
+    }
+
+  .nav-button.music:hover {
+      background-color: #6993D0;
+    }
+
+    /* 图片（如果有的话）悬停时的放大效果，这里原代码中没有图片悬停效果，所以保留但注释掉 */
+    /*
+  .zoomable {
+      transition: transform 0.3s ease;
+    }
+
+  .zoomable:hover {
+      transform: scale(1.2);
+    }
+    */
+
+    /* 为图片添加圆角样式，这里设置了10px的圆角半径，你可以根据需要调整具体数值 */
+    img {
+      border-radius: 10px;
+    }
+
+    /* 表格宽度设为100%，占满整个父容器（一般就是body元素代表的页面可视区域），高度设为auto，根据内容自动撑开 */
+    table {
+      width: 100%;
+      height: auto;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <!-- 原代码中的图片标签被移除了，因为没有提供图片路径，且不是按钮调整的一部分 -->
+        <td height="256" colspan="6"><img src="image/bg.png" width="1367" height="544" alt="" /></td>
+        <!-- 使用&nbsp;来占位，避免单元格内容为空时的问题 -->
+      </tr>
+      <tr>
+        <td width="20%" height="108" align="center">
+          <a href="web/hust.html" class="nav-button hust">华中科技大学</a>
+        </td>
+        <td width="20%" align="center">
+          <a href="web/marathon.html" class="nav-button marathon">光谷马拉松</a>
+        </td>
+        <td width="20%" align="center">
+          <a href="https://ruilinli-l.github.io/dorm/" class="nav-button dormitory">寝室主页</a>
+          <!-- 占位链接 -->
+        </td>
+        <td width="20%" align="center">
+          <a href="web/sm.html" class="nav-button summer-memories">夏日回忆</a>
+        </td>
+        <td width="20%" align="center">
+          <a href="web/ov.html" class="nav-button music">我的音乐</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
